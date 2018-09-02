@@ -1,14 +1,8 @@
-const puretext = require('puretext');
 
 let counter = 0;
 const env = process.env;
-const amandaPhone = env.amandaPhone;
-const brendaPhone = env.brendaPhone;
-const jacobPhone = env.jacobPhone;
-const anaPhone = env.anaPhone;
-const sendNumber = env.sendNumber;
-const test1 = env.test1;
-const test2 = env.test2;
+const { amandaPhone, brendaPhone, jacobPhone, anaPhone, sendNumber, test1, test2, accountSid, authToken } = env
+const client = require('twilio')(accountSid, authToken);
 
 module.exports = {
 
@@ -19,7 +13,7 @@ module.exports = {
         //phone number placholder
         let ping = "";
         let body = "";
-        const send =sendNumber; 
+        const send = sendNumber;
         const token = "e5dssb";
         //check the value of therapist and then 
         switch (therapist) {
@@ -44,33 +38,29 @@ module.exports = {
                     console.log(brendaPhone);
                 };
                 break;
-                case "Ana":
+            case "Ana":
                 {
                     ping = test1
                     body = "Ana your client is ready for you."
                     console.log(anaPhone);
                 }
         }
-        let text = {
-            toNumber: ping,
-            fromNumber: send,
-            smsBody: body,
-            apiToken: token
-        }
-        puretext.send(text, (err, response) => {
-            if (err) console.log(err);
-            else {
+
+        client.messages
+            .create({
+                body: body,
+                from: send,
+                to: ping
+            }).then(message => {
                 counter++;
                 console.log("-------------");
                 console.log("successful send ", counter);
                 console.log("-------------");
-                console.log(response)
-            }
-            console.log("-------------");
-
-        }
-        )
+                console.log(message.sid)
+            })
+            .done();
     }
-
-
 }
+
+
+

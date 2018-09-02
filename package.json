@@ -1,7 +1,7 @@
 {
   "name": "erc_texting",
   "version": "0.1.0",
-  "main" : "server.js",
+  "main": "server.js",
   "engines": {
     "node": "8.9.3"
   },
@@ -13,11 +13,11 @@
     "express-session": "^1.15.6",
     "if-env": "^1.0.4",
     "mdbreact": "^4.7.0",
-    "puretext": "^0.1.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5",
-    "sms-link": "^1.0.1"
+    "sms-link": "^1.0.1",
+    "twilio": "^3.19.2"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
