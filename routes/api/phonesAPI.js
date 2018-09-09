@@ -14,7 +14,6 @@ module.exports = {
         let ping = "";
         let body = "";
         const send = sendNumber;
-        const token = "e5dssb";
         //check the value of therapist and then 
         switch (therapist) {
             case "Jacob":
@@ -44,6 +43,12 @@ module.exports = {
                     body = "Ana your client is ready for you."
                     console.log(anaPhone);
                 }
+            case "Myles" :
+             {
+                 ping = test1
+                 body = "Myles your client is ready for you."
+                 console.log(mylesPhone)
+             }
         }
 
         client.messages
