@@ -25,6 +25,9 @@ class App extends Component {
 
   render() {
     const ready = this.state.ready
+    console.log("Checking the state!")
+    console.log(ready)
+    console.log("-----------")
     return (
       <div>
       {ready ? (<Checkin updateParent = {this.updateParentState} />) : (<LandingPage updateParent = {this.updateParentState} />) }

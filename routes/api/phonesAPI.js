@@ -61,7 +61,8 @@ module.exports = {
                 console.log("-------------");
                 console.log("successful send ", counter);
                 console.log("-------------");
-                console.log(message.sid)
+                console.log(message.sid);
+                res.send("Text message sent");
             })
             .done();
     }
