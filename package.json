@@ -27,7 +27,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "install": "cd client && npm install --only=dev && npm install && npm run build",
-    "build": "cd client && npm run build",
+    "build": "npm run build",
     "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "John Stuart-Jacquez",
