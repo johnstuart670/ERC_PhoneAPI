@@ -1,22 +1,15 @@
 .SuperText {
-    font-size: 72px;
-}
-
-;
-
-.bottomBtn {
-    position: absolute;
-    bottom: 0px;
-}
-
-;
-
-.btnPosition {
-    position: relative;
+  font-size: 72px;
 }
 
 ;
 
 .lineAdjust {
-    line-height: .05;
+  line-height: .05;
+}
+
+;
+
+p {
+  color: #ffe082 !important;
 }

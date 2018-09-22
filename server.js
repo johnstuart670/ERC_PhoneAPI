@@ -14,12 +14,10 @@ const PORT = process.env.PORT || 3001;
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-// app.use(morgan('dev')); // for logging
 console.log("process.env log", process.env.NODE_ENV);
-// Serve up static assets (usually on heroku)
-// if (process.env.NODE_ENV === "production") {
-	app.use(express.static(path.join(__dirname, "public")));
-// }
+
+	app.use(express.static(path.join(__dirname, "../client/public")));
+
 
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static("client/build"));

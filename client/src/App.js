@@ -6,7 +6,6 @@ import  LandingPage from './Components/Pages/LandingPage';
 import  Checkin from './Components/Pages/Checkin';
 import './App.css';
 
-
 class App extends Component {
 
   constructor(props) {
@@ -28,7 +27,7 @@ class App extends Component {
     console.log(ready)
     console.log("-----------")
     return (
-      <div classname = "black mx-0">
+      <div>
       {!ready ? (<Checkin updateParent = {this.updateParentState} />) : (<LandingPage updateParent = {this.updateParentState} />) }
       </div>
 )

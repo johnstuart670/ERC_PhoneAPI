@@ -1,29 +1,29 @@
-.App {
-  text-align: center;
-  background-color: black;
-}
+/* this is the app.css file */
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+body {
+  background-color: black !important;
+  font-family: 'Goudy Old Style';
+};
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
 
-.App-title {
-  font-size: 1.5em;
-}
+.SuperText {
+  font-size: 72px;
+};
 
-.App-intro {
-  font-size: large;
-}
+.bottomBtn {
+  position: absolute;
+  bottom: 0px;
+};
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.btnPosition {
+  position: relative;
+};
+
+.lineAdjust {
+  line-height: .05;
+};
+
+h4, h1, .override {
+  color: #ffe082 !important;
+};
+
