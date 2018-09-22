@@ -1,0 +1,22 @@
+.SuperText {
+    font-size: 72px;
+}
+
+;
+
+.bottomBtn {
+    position: absolute;
+    bottom: 0px;
+}
+
+;
+
+.btnPosition {
+    position: relative;
+}
+
+;
+
+.lineAdjust {
+    line-height: .05;
+}

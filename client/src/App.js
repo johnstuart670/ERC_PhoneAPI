@@ -4,7 +4,6 @@ import 'mdbreact/dist/css/mdb.css';
 import React, { Component } from 'react';
 import  LandingPage from './Components/Pages/LandingPage';
 import  Checkin from './Components/Pages/Checkin';
-import { Button } from 'mdbreact';
 import './App.css';
 
 
@@ -29,8 +28,8 @@ class App extends Component {
     console.log(ready)
     console.log("-----------")
     return (
-      <div>
-      {ready ? (<Checkin updateParent = {this.updateParentState} />) : (<LandingPage updateParent = {this.updateParentState} />) }
+      <div classname = "black mx-0">
+      {!ready ? (<Checkin updateParent = {this.updateParentState} />) : (<LandingPage updateParent = {this.updateParentState} />) }
       </div>
 )
   }

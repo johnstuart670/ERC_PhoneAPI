@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Button } from 'mdbreact';
-import { CompositionList } from '../../../../node_modules/twilio/lib/rest/video/v1/composition';
 const axios = require('axios');
 
 export default class Checkin extends Component {
@@ -19,41 +18,29 @@ export default class Checkin extends Component {
         console.log(pingurl);
         axios.get(pingurl).then(function (results) {
             console.log("results", results.data);
-            setTimeout(function () { that.updateParentState(); }, 45000);
-    });
+            {that.updateParentState()};
+        });
 
-}
+    }
 
-render() {
-    return (
-        <React.Fragment>
-            <div className="App">
-                <h1 className="App-title">ERC Phone Server</h1>
-                <p className="App-intro">
-                    Testing the server capabilities of Node and Heroku to run a "Your Client is here" notification        </p>
-            </div>
+    render() {
+        return (
+            <React.Fragment>
+                <Container className="mx-auto px-0 black py-5">
+                    <h1 className="mx-auto my-0 text-center brown-text">ERC</h1>
+                    <h4 className="mx-auto my-1 text-center brown-text"> Who are you here to see today?
+           </h4>
+                    <Button block id="Jacob" color="brown" className="mx-auto my-3 col-7" onClick={() => { this.pingT("Jacob") }} ><h4 className ="my-auto">Jacob Jacquez, LCSW</h4></Button>
+                    <Button block id="Amanda" color="brown" className="mx-auto my-3 col-7" onClick={() => { this.pingT("Amanda") }}><h4 className ="my-auto">Amanda Gonzalez, LCSW</h4></Button>
+                    <Button block id="Brenda" color="brown" className="mx-auto my-3 col-7" onClick={() => { this.pingT("Brenda") }}><h4 className ="my-auto">Brenda Dowse, LCSW</h4></Button>
+                    <Button block id="Ana" color="brown" className="mx-auto my-3 col-7" onClick={() => { this.pingT("Ana") }}><h4 className ="my-auto">Ana Borges, LMFT</h4></Button>
+                    <Button block id="Myles" color="brown" className="mx-auto my-3 col-7" onClick={() => { this.pingT("Myles") }}><h4 className ="my-auto">Myles Davis, LCSW</h4></Button>
 
-            <Container className="mx-auto black">
-                <Row className="mx-auto ">
-                    <p className="mx-auto text-center white-text" > Click on your therapists' name below to let them know you have arrived.
-           </p>
-                </Row>
-                <Row className="mx-auto ">
-                    <Button id="Jacob" color="brown" className="mx-auto col-5" onClick={() => { this.pingT("Jacob") }} >Jacob Jacquez, LCSW</Button>
-                    <Button id="Amanda" color="brown" className="mx-auto col-5" onClick={() => { this.pingT("Amanda") }}>Amanda Gonzalez, LCSW</Button>
-                </Row>
-                <Row className="mx-auto ">
-                    <Button id="Brenda" color="brown" className="mx-auto col-5" onClick={() => { this.pingT("Brenda") }}>Brenda Dowse, LCSW</Button>
-                    <Button id="Brenda" color="brown" className="mx-auto col-5" onClick={() => { this.pingT("Ana") }}>Ana Borges, LMFT</Button>
-                </Row>
-                <Row className="mx-auto ">
-                    <Button id="Brenda" color="brown" className="mx-auto col-5" onClick={() => { this.pingT("Myles") }}>Myles Davis, LCSW</Button>
-                </Row>
-            </Container>
-        </React.Fragment>
+                </Container>
+            </React.Fragment>
 
-    );
-}
+        );
+    }
 }
 
 
