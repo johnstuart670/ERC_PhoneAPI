@@ -20,7 +20,7 @@ export default class Checkin extends Component {
         console.log(pingurl);
         axios.get(pingurl).then(function (results) {
             console.log("results", results.data);
-            that.updateParentState();
+            that.updateParentState("Confirmation");
         });
 
     }
