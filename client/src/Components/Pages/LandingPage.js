@@ -2,14 +2,10 @@ import React, { Component } from 'react';
 import { Container, Button, Row } from 'mdbreact';
 import './textStyle.css';
 
-let ERC_BG = {
-	backgroundImage: `url(.images/erc_images/powerlogo2.jpg)`,
-	height: "100%",
-};
-
-let ERC_Container = {
-	height: "100px"
-};
+let imgStyle = {
+	width: "auto",
+	height: "500px"
+}
 
 export default class LandingPage extends Component {
 	constructor(props) {
@@ -23,12 +19,18 @@ export default class LandingPage extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Container style = {ERC_Container}>
-					<div style={ERC_BG }></div>
-					<img src = "url(.images/erc_images/powerlogo2.jpg)" alt = "Empowering Relief Checkin"></img>
-					<Row>
-						<Button block color="brown" className="black-text" onClick={() => { this.updateParentPageState("Checkin") }}>Click here to Check In</Button>
+				<Container className = "mx-auto">
+					<Row className = "pt-5 mx-auto">
+						<h1 className = "brown-text mx-auto my-auto">Welcome</h1>
 					</Row>
+					<Row>
+					<img style = {imgStyle} className = "mx-auto py-1" src = "./images/erc_images/powerlogo2.jpg" alt = "ERC Checkin Page Empowering Relief Counseling Checkin" />
+					</Row>
+				<Button block color="brown" className = "col-8" onClick={() => { this.updateParentPageState("Checkin") }}>
+					<h3 className="text-capitalize black-text my-auto mx-auto">
+					Click here to Check In
+					</h3>
+					</Button>
 				</Container>
 			</React.Fragment>
 		)
