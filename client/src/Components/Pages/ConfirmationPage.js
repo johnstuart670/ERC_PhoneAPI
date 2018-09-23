@@ -24,7 +24,7 @@ export default class ConfirmationPage extends Component {
                 </Container>
                 <Container className = "btnPosition pt-5">
                     <Button block color = "brown" className=" bottomBtn" onClick={() => { this.updateParentPageState("Landing") }}>
-                        <h3 className="my-auto black-text">Go back to the Checkin Page</h3>
+                        <h3 className="my-auto black-text">Go back to the Home Page</h3>
                     </Button>
                 </Container>
             </React.Fragment>

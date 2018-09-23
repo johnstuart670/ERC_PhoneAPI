@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 
 require('dotenv').config()
-const path = require ("path");
+const path = require("path");
 
 const routes = require("./routes");
 
@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 console.log("process.env log", process.env.NODE_ENV);
 
-	app.use(express.static(path.join(__dirname, "../client/public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 
 if (process.env.NODE_ENV === "production") {
