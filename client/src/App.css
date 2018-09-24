@@ -3,12 +3,11 @@
 body {
   background-color: black !important;
   font-family: 'Goudy Old Style';
-};
-
-
-.SuperText {
-  font-size: 72px;
-};
+  margin: auto;
+}
+#root, html {
+  margin: auto;
+}
 
 .bottomBtn {
   position: absolute;
