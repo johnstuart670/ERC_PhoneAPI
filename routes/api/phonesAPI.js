@@ -41,14 +41,19 @@ module.exports = {
                 {
                     ping = anaPhone;
                     body = "Ana your client is ready for you."
+                    console.log(body)
+                    console.log(test1)
                     console.log(anaPhone);
+                    console.log(body)
                 }
+                break;
             case "Myles" :
              {
                  ping = mylesPhone;
                  body = "Myles your client is ready for you."
                  console.log(mylesPhone);
              }
+             break;
         }
 
         client.messages
