@@ -13,9 +13,9 @@ class App extends Component {
     super(props);
     this.state = {
       page: "Landing"
-    }
+    };
     this.updateParentPageState = this.updateParentPageState.bind(this);
-  }
+  };
 
   updateParentPageState = (updateValue) => {
     this.setState({ page: updateValue })

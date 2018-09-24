@@ -18,36 +18,36 @@ module.exports = {
         switch (therapist) {
             case "Jacob":
                 {
-                    ping = test1;
+                    ping = jacobPhone;
                     body = "Jacob your client is ready for you."
                     console.log(jacobPhone);
                 };
                 break;
             case "Amanda":
                 {
-                    ping = test1;
+                    ping = amandaPhone;
                     body = "Amanda your client is ready for you."
                     console.log(amandaPhone);
                 };
                 break;
             case "Brenda":
                 {
-                    ping = test2;
+                    ping = brendaPhone;
                     body = "Brenda your client is ready for you."
                     console.log(brendaPhone);
                 };
                 break;
             case "Ana":
                 {
-                    ping = test1
+                    ping = anaPhone;
                     body = "Ana your client is ready for you."
                     console.log(anaPhone);
                 }
             case "Myles" :
              {
-                 ping = test1
+                 ping = mylesPhone;
                  body = "Myles your client is ready for you."
-                 console.log(mylesPhone)
+                 console.log(mylesPhone);
              }
         }
 
