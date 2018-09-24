@@ -12,7 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: "Confirmation"
+      page: "Landing"
     }
     this.updateParentPageState = this.updateParentPageState.bind(this);
   }

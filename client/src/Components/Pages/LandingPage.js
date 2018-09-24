@@ -4,7 +4,7 @@ import './textStyle.css';
 
 let imgStyle = {
 	width: "auto",
-	height: "400px"
+	height: "600px"
 };
 
 export default class LandingPage extends Component {
@@ -27,7 +27,7 @@ export default class LandingPage extends Component {
 					<img style = {imgStyle} className = "mx-auto py-1" src = "./images/erc_images/powerlogo2.jpg" alt = "ERC Checkin Page Empowering Relief Counseling Checkin" />
 					</Row>
 				<Button block color="brown" className = "mx-auto py-2 my-5 col-8 black-text" onClick={() => { this.updateParentPageState("Checkin") }}>
-					<h3 className="text-capitalize black-text my-auto py-1 black-text superSize3">
+					<h3 className="text-capitalize black-text my-auto py-1 black-text superSize7">
 					Click here to Check In
 					</h3>
 					</Button>
