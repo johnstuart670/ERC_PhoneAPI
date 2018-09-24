@@ -4,7 +4,7 @@ import './textStyle.css';
 
 let imgStyle = {
 	width: "auto",
-	height: "500px"
+	height: "925px"
 }
 
 export default class LandingPage extends Component {
@@ -21,13 +21,13 @@ export default class LandingPage extends Component {
 			<React.Fragment>
 				<Container className = "mx-auto">
 					<Row className = "pt-5 mx-auto">
-						<h1 className = "brown-text mx-auto my-auto">Welcome</h1>
+						<h1 className = "brown-text mx-auto my-auto superSize4">Welcome</h1>
 					</Row>
 					<Row>
 					<img style = {imgStyle} className = "mx-auto py-1" src = "./images/erc_images/powerlogo2.jpg" alt = "ERC Checkin Page Empowering Relief Counseling Checkin" />
 					</Row>
-				<Button block color="brown" className = "col-8" onClick={() => { this.updateParentPageState("Checkin") }}>
-					<h3 className="text-capitalize black-text my-auto mx-auto">
+				<Button block color="brown" className = "mx-auto py-2 my-5 col-11 black-text" onClick={() => { this.updateParentPageState("Checkin") }}>
+					<h3 className="text-capitalize black-text my-3 py-2 black-text superSize3">
 					Click here to Check In
 					</h3>
 					</Button>

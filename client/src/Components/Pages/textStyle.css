@@ -1,16 +1,32 @@
 .SuperText {
-  font-size: 72px;
+  font-size: 100px;
 }
 
-;
 
 .lineAdjust {
   line-height: .05;
 }
 
-.ERC_BG {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.superSize1 {
+  font-size: 95px;
 }
 
+.superSize2 {
+  font-size: 70px;
+}
+
+.superSize3 {
+  font-size: 72px;
+}
+
+.superSize4 {
+  font-size: 250px;
+}
+
+.superSize5 {
+  font-size: 115px;
+}
+
+.superSize6 {
+  font-size: 56px;
+}
