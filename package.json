@@ -13,7 +13,7 @@
     "express": "^4.16.4",
     "express-session": "^1.16.1",
     "if-env": "^1.0.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mdbreact": "johnstuart670/React-Bootstrap-with-Material-Design",
     "mongodb": "^3.2.6",
     "mongoose": "^5.5.12",
